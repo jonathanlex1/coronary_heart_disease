@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>HTML Forms</h2>
+
+<form action="/predict" method="post" enctype="multipart/form-data">
+  <label for="gender">Gender (Male = 1, Female = 0):</label><br>
+  <input type="text" id="gender" name="gender"><br>
+
+  <label for="age">Age:</label><br>
+  <input type="text" id="age" name="age"><br>
+  
+  <label for="education">Education (1-4):</label><br>
+  <input type="text" id="education" name="education"><br>
+  
+  <label for="currentSmoker">Current Smoker (0 or 1):</label><br>
+  <input type="text" id="currentSmoker" name="currentSmoker"><br>
+  
+  <label for="cigsPerDay">Cigarets Per Day:</label><br>
+  <input type="text" id="cigsPerDay" name="cigsPerDay"><br>
+  
+  <label for="BPMeds">BPMeds (0 or 1):</label><br>
+  <input type="text" id="BPMeds" name="BPMeds"><br>
+  
+  <label for="prevalentStroke">Prevalent Stroke (0 or 1):</label><br>
+  <input type="text" id="prevalentStroke" name="prevalentStroke"><br>
+  
+  <label for="prevalentHyp">Prevalent Hypertension (0 or 1):</label><br>
+  <input type="text" id="prevalentHyp" name="prevalentHyp"><br>
+  
+  <label for="diabetes">Diabetes (0 or 1):</label><br>
+  <input type="text" id="diabetes" name="diabetes"><br>
+  
+  <label for="totChol">Total Cholestrol (0 or 1):</label><br>
+  <input type="text" id="totChol" name="totChol"><br>
+  
+  <label for="sysBP">Systolic Blood Presure :</label><br>
+  <input type="text" id="sysBP" name="sysBP"><br>
+  
+  <label for="diaBP">Diastolic Blood Pressure :</label><br>
+  <input type="text" id="diaBP" name="diaBP"><br>
+  
+  <label for="BMI">BMI:</label><br>
+  <input type="text" id="BMI" name="BMI"><br>
+  
+  <label for="heartRate">Heart Rate:</label><br>
+  <input type="text" id="heartRate" name="heartRate"><br>
+  
+  <label for="glucose">Glucose :</label><br>
+  <input type="text" id="glucose" name="glucose"><br><br>
+  
+  <input type="submit" value="Submit">
+</form> 
+
+{% if predict and probability %}
+    <h2>Prediction Result</h2>
+    <p><strong>Prediction:</strong> {{ predict }}</p>
+    <p><strong>Probability:</strong> {{ probability }}</p>
+{% endif %}
+</body>
+</html>
