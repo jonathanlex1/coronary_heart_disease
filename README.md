@@ -35,10 +35,10 @@ The modeling results will be divided based on the dataset used.
 | ROC-AUC        |          |       | 0.70      |              |
 
 - Confusion Matrix
-![alt text](image.png)
+![alt text](imgs/image.png)
 
 - ROC Curve
-![alt text](image-1.png)
+![alt text](imgs/image-1.png)
 
 #### Random Forest
 | Metric         | Non-CHD | CHD   | Macro Avg | Weighted Avg |
@@ -50,10 +50,10 @@ The modeling results will be divided based on the dataset used.
 | ROC-AUC        |          |       | 0.74      |              |
 
 - Confusion Matrix
-![alt text](image-2.png)
+![alt text](imgs/image-2.png)
 
 - Roc Curve
-![alt text](image-3.png)
+![alt text](imgs/image-3.png)
 
 **Data Oversampled SMOTE**
 
@@ -67,10 +67,10 @@ The modeling results will be divided based on the dataset used.
 | ROC-AUC        |          |       | 0.94      |              |
 
 - Confusion Matrix 
-![alt text](image-4.png)
+![alt text](imgs/image-4.png)
 
 - ROC Curve
-![alt text](image-5.png)
+![alt text](imgs/image-5.png)
 
 #### Random Forest
 | Metric         | Non-CHD | CHD   | Macro Avg | Weighted Avg |
@@ -81,9 +81,9 @@ The modeling results will be divided based on the dataset used.
 | Support        | 719      | 720   | 1439      | 1439         |
 | ROC-AUC        |          |       | 0.95      |              |
 - Confusion Matrix
-![alt text](image-6.png)
+![alt text](imgs/image-6.png)
 - ROC Curve
-![alt text](image-7.png)
+![alt text](imgs/image-7.png)
 
 **Random Forest** emerged as the superior model, achieving higher accuracy, recall, precision, and F1-score compared to Logistic Regression. The high ROC-AUC scores for both models indicate that they effectively handled the data imbalance after applying oversampling techniques.
 
